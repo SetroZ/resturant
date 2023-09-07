@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en' className='w-full h-full'>
-      <body className=' bg-gray-100 flex flex-col h-full w-full'>
+      <body className=' bg-gray-50 flex flex-col h-full w-full'>
         <header>
           <Notification />
           <NavBar />

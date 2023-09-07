@@ -20,11 +20,11 @@ const Menu = ({
   return (
     open && (
       <ul
-        className=' transition-all uppercase  flex-grow bg-red-500 text-white
+        className=' transition-all uppercase   bg-red-500 text-white
 
        flex flex-col justify-center items-center absolute
-         w-full h-[calc(100vh-134px)] text-3xl gap-10
-          z-10 md:hidden
+         w-full h-[calc(100vh-110px)] gap-14 font-semibold
+          z-10 md:hidden  text-4xl
        '
       >
         {links.map((item) => (
@@ -32,7 +32,11 @@ const Menu = ({
             key={item.id}
             onClick={() => setOpen((prevState: boolean) => !prevState)}
           >
-            <Link href={item.url}>{item.title}</Link>
+            <Link
+              href={item.url}
+            >
+              {item.title}
+            </Link>
           </li>
         ))}
 

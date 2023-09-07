@@ -16,7 +16,7 @@ export default function Offer() {
           quas.
         </p>
         <h3 className='text-g'></h3>
-        <Timer />
+        {/* <Timer /> */}
         <button
           className='p-2 text-center font-semibold text-white bg-red-500 
         rounded-md text-lg '

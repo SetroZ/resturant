@@ -2,6 +2,7 @@ import React from 'react'
 import { menuProps } from './props'
 import Image from 'next/image'
 export const MenuButton = ({ open, setOpen }: menuProps) => {
+
   return (
     <button className='md:hidden'>
       {!open ? (
@@ -15,12 +16,13 @@ export const MenuButton = ({ open, setOpen }: menuProps) => {
       ) : (
         <Image
           src='/close.png'
-          onClick={() => setOpen((prevstate) => !prevstate)}
+          onClick={() =>  setOpen((prevstate) => !prevstate)}
           alt='menu button'
           width={20}
           height={20}
         />
       )}
+      
     </button>
   )
 }

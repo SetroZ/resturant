@@ -8,11 +8,13 @@ import CartIcon from './CartIcon'
 const NavBar = () => {
   const user = false
   const [open, setOpen] = useState(false)
+  console.log(open)
   return (
     <>
     
     
     <nav className='
+    bg-white shadow-lg
       border-b-red-500 border-b-2 flex justify-center items-center 
       min-h-[60px]
       '>
