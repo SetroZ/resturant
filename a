@@ -1,0 +1,75 @@
+[33mcommit 2889bd42a04100ff4eb65867debb4b40b845fdd0[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Merge: 6998b18 bafeda5
+Author: SetroZ <yousfsbry66@gmail.com>
+Date:   Fri Sep 15 12:47:25 2023 +0800
+
+    Merge branch 'main' of https://github.com/SetroZ/resturant
+
+[33mcommit 6998b1810e9a014611e58ff967de38ccf1f36d8e[m[33m ([m[1;32mlayoutUI[m[33m)[m
+Author: SetroZ <yousfsbry66@gmail.com>
+Date:   Fri Sep 15 12:33:52 2023 +0800
+
+    added docker and prisma
+
+[33mcommit bafeda57f5e1fa8e7486b9ea5a01b80a8902d083[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 1456664 8a19bc9
+Author: SetroZ <yousfsbry66@gmail.com>
+Date:   Fri Sep 15 12:30:28 2023 +0800
+
+    Merge branch 'main' of https://github.com/SetroZ/resturant
+
+[33mcommit 145666421fa1494c098216b1f47536fa5c2ad689[m[33m ([m[1;31morigin/layoutUI[m[33m)[m
+Author: SetroZ <yousfsbry66@gmail.com>
+Date:   Wed Sep 13 13:08:04 2023 +0800
+
+    UI
+
+[33mcommit c4c6b2c96cd5d5ae4a4afcbac4dc4072375c6e9e[m
+Author: SetroZ <yousfsbry66@gmail.com>
+Date:   Thu Sep 7 10:18:57 2023 +0800
+
+    Added Menu page
+
+[33mcommit d84456a0fffc339d681cf42d7cbeaaf9fbb55a43[m
+Author: SetroZ <yousfsbry66@gmail.com>
+Date:   Wed Sep 6 23:38:52 2023 +0800
+
+    test
+
+[33mcommit 5bd7bbc51d89025f805d456e999159016ea41ef2[m
+Author: SetroZ <=yousfsbry66@gmail.com>
+Date:   Wed Sep 6 23:36:36 2023 +0800
+
+    Big commit
+
+[33mcommit 8a19bc9ba977dfa04dd3a24e01a77b283ea1e800[m
+Author: SetroZ <78594157+SetroZ@users.noreply.github.com>
+Date:   Tue Aug 29 00:50:22 2023 +0800
+
+    Update README.md
+    
+    delete nextjs boilerplate
+
+[33mcommit d488ff9e519978b6525fc23365597b5b1f6d61a1[m
+Author: =Yusuf <=>
+Date:   Tue Aug 29 00:47:45 2023 +0800
+
+    testing
+
+[33mcommit b699f681896aed791033417729350e43d20fcf6c[m
+Author: =Yusuf <=>
+Date:   Tue Aug 29 00:39:26 2023 +0800
+
+    Basic Structure
+
+[33mcommit 28c6f08eab81870058687bf3aae1b64761db5037[m
+Author: =Yusuf <=>
+Date:   Tue Aug 29 00:19:35 2023 +0800
+
+    Initial commit from Create Next App
+
+[33mcommit d03ec9b9e51f613619c2ed0951b6a372d60d0a45[m
+Author: Safak <lama@dev.local>
+Date:   Wed Jul 19 14:50:55 2023 +0200
+
+    commit
