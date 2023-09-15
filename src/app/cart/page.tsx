@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import Image from "next/image";
 import React from "react";
 
@@ -66,14 +65,3 @@ const CartPage = () => {
 };
 
 export default CartPage;
-=======
-import React from 'react'
-
-const page = () => {
-  return (
-    <div>page</div>
-  )
-}
-
-export default page
->>>>>>> bafeda57f5e1fa8e7486b9ea5a01b80a8902d083

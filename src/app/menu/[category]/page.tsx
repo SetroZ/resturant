@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { pizzas } from "@/data";
 import Image from "next/image";
 import Link from "next/link";
@@ -28,20 +27,3 @@ const CategoryPage = () => {
 };
 
 export default CategoryPage;
-=======
-import React from 'react'
-import { pizzas } from '@/data'
-
-import Item from './Item'
-const page = () => {
-  return (
-    <div className=' uppercase flex flex-wrap text-red-500  whitespace-nowrap '>
-      {pizzas.map((pizza) => {
-        return <Item {...pizza} key={pizza.id} />
-      })}
-    </div>
-  )
-}
-
-export default page
->>>>>>> bafeda57f5e1fa8e7486b9ea5a01b80a8902d083

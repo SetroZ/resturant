@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -46,14 +45,3 @@ const LoginPage = () => {
 };
 
 export default LoginPage;
-=======
-import React from 'react'
-
-const Login = () => {
-  return (
-    <div>Login</div>
-  )
-}
-
-export default Login
->>>>>>> bafeda57f5e1fa8e7486b9ea5a01b80a8902d083
