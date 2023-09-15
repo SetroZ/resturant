@@ -8,7 +8,6 @@ import CartIcon from './CartIcon'
 const NavBar = () => {
   const user = false
   const [open, setOpen] = useState(false)
-  console.log(open)
   return (
     <>
     
