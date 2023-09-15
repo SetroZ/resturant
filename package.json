@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "restaurant",
+=======
+  "name": "resturant",
+>>>>>>> bafeda57f5e1fa8e7486b9ea5a01b80a8902d083
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +13,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@prisma/client": "^5.3.0",
     "@types/node": "20.4.2",
     "@types/react": "18.2.15",
@@ -19,10 +24,24 @@
     "next": "13.4.10",
     "postcss": "8.4.26",
     "prisma": "^5.3.0",
+=======
+    "@types/node": "20.5.7",
+    "@types/react": "18.2.21",
+    "@types/react-dom": "18.2.7",
+    "autoprefixer": "10.4.15",
+    "eslint": "8.48.0",
+    "eslint-config-next": "13.4.19",
+    "next": "13.4.19",
+    "postcss": "8.4.28",
+>>>>>>> bafeda57f5e1fa8e7486b9ea5a01b80a8902d083
     "react": "18.2.0",
     "react-countdown": "^2.3.5",
     "react-dom": "18.2.0",
     "tailwindcss": "3.3.3",
+<<<<<<< HEAD
     "typescript": "5.1.6"
+=======
+    "typescript": "5.2.2"
+>>>>>>> bafeda57f5e1fa8e7486b9ea5a01b80a8902d083
   }
 }

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 type Product = {
+=======
+export type Product = {
+>>>>>>> bafeda57f5e1fa8e7486b9ea5a01b80a8902d083
   id: number
   title: string
   desc?: string
