@@ -3,7 +3,10 @@ import Image from 'next/image'
 import React from 'react'
 import getData from '@/utils/getData'
 import { ProductType } from '@/types/types'
+
+
 const Featured = async () => {
+
   const featuredProducts = await getData<ProductType[]>('products')
   return (
     <div className='w-screen overflow-x-scroll text-red-500'>
