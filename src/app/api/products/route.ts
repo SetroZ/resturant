@@ -12,7 +12,7 @@ export const GET = async (req: NextRequest) => {
     })
     return new NextResponse(JSON.stringify(products), { status: 200 })
   } catch (err) {
-    console.log(err)
+
     return new NextResponse('something went wrong', { status: 500 })
   }
 }
