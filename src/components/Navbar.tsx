@@ -5,6 +5,7 @@ import Menu from './Menu/Menu'
 import { MenuButton } from './Menu/MenuButton'
 import Link from 'next/link'
 import CartIcon from './CartIcon'
+import UserLinks from './userLinks'
 const NavBar = () => {
   const user = false
   const [open, setOpen] = useState(false)
@@ -36,14 +37,8 @@ const NavBar = () => {
           <MenuButton open={open} setOpen={setOpen} />
           {/* Right Links */}
           <div className='hidden md:flex gap-4'>
-            {user ? (
-              <Link href='/orders'>Orders</Link>
-            ) : (
-              <div className='flex items-center gap-5'>
-                <Link href='/Login'>login</Link>
-                <CartIcon />
-              </div>
-            )}
+            <UserLinks />
+            <CartIcon/>
           </div>
         </ul>
 
