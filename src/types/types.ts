@@ -30,3 +30,14 @@ export interface OrderType {
   status: string
   createdAt: string
 }
+
+export interface CartType {
+  products: CartItemType[]
+  totalItems: number
+  totalPrice: number
+}
+
+export interface ActionTypes {
+  addToCart: (item: CartItemType) => void
+  removeFromCart: (item: CartItemType) => void
+}

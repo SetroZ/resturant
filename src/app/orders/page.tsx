@@ -35,7 +35,6 @@ const OrdersPage = () => {
     onSuccess(data) {
       queryClient.invalidateQueries({ queryKey: ['orders'] })
       data.json().then((res) => toast.success(res.message))
-
     },
     onError(err) {
       toast.error('Something Went Wrong')
@@ -68,7 +67,14 @@ const OrdersPage = () => {
         </thead>
         <tbody>
           {data.map((item: OrderType) => (
-            <tr className='text-sm md:text-base bg-red-50' key={item.id}>
+            <tr
+              className={`text-sm md:text-base ${
+                item.status.toLowerCase() == 'delivered'
+                  ? 'bg-white'
+                  : 'bg-red-100'
+              }`}
+              key={item.id}
+            >
               <td className='hidden md:block py-6 px-1'>{item.id}</td>
               <td className='py-6 px-1'>{item.createdAt.slice(0, 10)}</td>
               <td className='py-6 px-1'>{item.price}</td>
