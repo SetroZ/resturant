@@ -17,9 +17,16 @@ export interface ProductType {
   options: { title: string; additionalPrice: number }[] // You may want to create a more specific type for options
 }
 
+export interface CartItemType {
+  id: number
+  title: string
+  price: number
+  quantity: number
+}
 export interface OrderType {
   id: string
   price: number
-  products: []
+  products: CartItemType[]
   status: string
+  createdAt: string
 }
