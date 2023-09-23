@@ -14,14 +14,17 @@ export interface ProductType {
   color: string
   img?: string | null
   price: number
-  options: { title: string; additionalPrice: number }[] // You may want to create a more specific type for options
+  options: { title: string; additionalPrice: number }[] 
+
 }
 
 export interface CartItemType {
-  id: number
+  id: string
   title: string
   price: number
   quantity: number
+  img: string
+  size:string
 }
 export interface OrderType {
   id: string
