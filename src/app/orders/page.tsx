@@ -15,7 +15,7 @@ const OrdersPage = () => {
 
   if (status === 'unauthenticated') {
     router.push('/')
-  }
+  }//s
 
   const { isLoading, error, data } = useQuery({
     queryKey: ['orders'],
