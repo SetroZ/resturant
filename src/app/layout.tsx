@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang='en' className='w-full h-full'>
       <body className=' bg-gray-50 flex flex-col h-full w-full'>
-        <AuthProvider>
+        {/* <AuthProvider>
           <QueryProvider>
             <header>
               <Notification />
@@ -39,7 +39,7 @@ export default function RootLayout({
               />
             </footer>
           </QueryProvider>
-        </AuthProvider>
+        </AuthProvider> */}
       </body>
     </html>
   )
