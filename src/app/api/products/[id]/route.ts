@@ -5,6 +5,7 @@ export const GET = async (
   req: NextRequest,
   { params }: { params: { id: string } }
 ) => {
+  console.log('sd')
   const { id } = params
   try {
     const product =  await prisma.product.findUnique({

@@ -2,6 +2,7 @@ import { NextResponse, NextRequest } from 'next/server'
 import prisma from '@/utils/connect'
 
 export const GET = async (req: NextRequest) => {
+  console.log('sda')
   const { searchParams } = new URL(req.url)
   const cat = searchParams.get('cat')
   try {
