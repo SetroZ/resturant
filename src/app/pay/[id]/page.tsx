@@ -14,24 +14,24 @@ const PayPage = ({ params }: { params: { id: string } }) => {
 
   const { id } = params
 
-  useEffect(() => {
-    const makeRequest = async () => {
-      try {
-        const res = await fetch(
-          `${process.env.LOCATION}/api/create-intent/${id}`,
-          {
-            method: 'POST',
-          }
-        )
-        const data = await res.json()
-        setClientSecret(data.clientSecret)
-      } catch (err) {
-        console.log(err)
-      }
-    }
+  // useEffect(() => {
+  //   const makeRequest = async () => {
+  //     try {
+  //       const res = await fetch(
+  //         `${process.env.LOCATION}/api/create-intent/${id}`,
+  //         {
+  //           method: 'POST',
+  //         }
+  //       )
+  //       const data = await res.json()
+  //       setClientSecret(data.clientSecret)
+  //     } catch (err) {
+  //       console.log(err)
+  //     }
+  //   }
 
-    makeRequest()
-  }, [id])
+  //   makeRequest()
+  // }, [id])
 
   const options: StripeElementsOptions = {
     clientSecret,

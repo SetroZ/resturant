@@ -9,53 +9,53 @@ import Image from 'next/image'
 import { toast } from 'react-toastify'
 
 const OrdersPage = () => {
-  const { data: session, status } = useSession()
-  const queryClient = new QueryClient()
-  const router = useRouter()
+  // const { data: session, status } = useSession()
+  // const queryClient = new QueryClient()
+  // const router = useRouter()
 
-  if (status === 'unauthenticated') {
-    router.push('/')
-  }
+  // if (status === 'unauthenticated') {
+  //   router.push('/')
+  // }
 
-  const { isLoading, error, data } = useQuery({
-    queryKey: ['orders'],
-    queryFn: () =>
-      fetch(`${process.env.LOCATION}/api/orders`).then((res) => res.json()),
-  })
-  const mutation = useMutation({
-    mutationFn: ({ id, status }: { id: string; status: string }) => {
-      return fetch(`${process.env.LOCATION}/api/orders/${id}`, {
-        method: 'PUT',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(status),
-      })
-    },
-    onSuccess(data) {
-      queryClient.invalidateQueries({ queryKey: ['orders'] })
-      data.json().then((res) => toast.success(res.message))
-    },
-    onError(err) {
-      toast.error('Something Went Wrong')
-      console.log(err)
-    },
-  })
-  const handleSubmit = (e: React.FormEvent, id: string) => {
-    e.preventDefault()
-    console.log('fu')
-    const form = e.target as HTMLFormElement
-    const input = form.elements[0] as HTMLInputElement
-    const value = input.value
-    mutation.mutate({ id, status: value })
-  }
+  // const { isLoading, error, data } = useQuery({
+  //   queryKey: ['orders'],
+  //   queryFn: () =>
+  //     fetch(`${process.env.LOCATION}/api/orders`).then((res) => res.json()),
+  // })
+  // const mutation = useMutation({
+  //   mutationFn: ({ id, status }: { id: string; status: string }) => {
+  //     return fetch(`${process.env.LOCATION}/api/orders/${id}`, {
+  //       method: 'PUT',
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //       },
+  //       body: JSON.stringify(status),
+  //     })
+  //   },
+  //   onSuccess(data) {
+  //     queryClient.invalidateQueries({ queryKey: ['orders'] })
+  //     data.json().then((res) => toast.success(res.message))
+  //   },
+  //   onError(err) {
+  //     toast.error('Something Went Wrong')
+  //     console.log(err)
+  //   },
+  // })
+  // const handleSubmit = (e: React.FormEvent, id: string) => {
+  //   e.preventDefault()
+  //   console.log('fu')
+  //   const form = e.target as HTMLFormElement
+  //   const input = form.elements[0] as HTMLInputElement
+  //   const value = input.value
+  //   mutation.mutate({ id, status: value })
+  // }
 
-  if (isLoading || status == 'loading') {
-    return <p>Loading...</p>
-  }
+  // if (isLoading || status == 'loading') {
+  //   return <p>Loading...</p>
+  
   return (
     <div className='p-4 lg:px-20 xl:px-40 text-center'>
-      <table className='w-full border-separate border-spacing-3'>
+      {/* <table className='w-full border-separate border-spacing-3'>
         <thead>
           <tr className='text-left'>
             <th className='hidden md:block'>Order ID</th>
@@ -108,7 +108,7 @@ const OrdersPage = () => {
             </tr>
           ))}
         </tbody>
-      </table>
+      </table> */}
     </div>
   )
 }

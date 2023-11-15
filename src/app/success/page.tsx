@@ -8,22 +8,22 @@ const SuccessPage = () => {
   const searchParams = useSearchParams()
   const payment_intent = searchParams.get('payment_intent')
 
-  useEffect(() => {
-    const makeRequest = async () => {
-      try {
-        await fetch(`${process.env.LOCATION}/api/confirm/${payment_intent}`, {
-          method: 'PUT',
-        })
-        setTimeout(() => {
-          router.push('/orders')
-        }, 5000)
-      } catch (err) {
-        console.log(err)
-      }
-    }
+  // useEffect(() => {
+  //   const makeRequest = async () => {
+  //     try {
+  //       await fetch(`${process.env.LOCATION}/api/confirm/${payment_intent}`, {
+  //         method: 'PUT',
+  //       })
+  //       setTimeout(() => {
+  //         router.push('/orders')
+  //       }, 5000)
+  //     } catch (err) {
+  //       console.log(err)
+  //     }
+  //   }
 
-    makeRequest()
-  }, [payment_intent, router])
+  //   makeRequest()
+  // }, [payment_intent, router])
 
   return (
     <>
