@@ -1,5 +1,5 @@
 const getData = async <T>(url: string, options?: RequestInit) => {
-  const res = await fetch(`http://localhost:3000/api/${url}`, {
+  const res = await fetch(`http://localhost:500/api/${url}`, {
     ...options,
     //   next: { revalidate: 100 },
     cache: 'no-cache',
