@@ -8,6 +8,6 @@ export default function Home() {
       <Slider/>
       <Featured/>
       <Offer/>
-    </main>
+    </main> //3
   )
 }
