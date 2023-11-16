@@ -41,7 +41,7 @@ const NavBar = () => {
               <Link href='/orders'>Orders</Link>
             ) : (
               <div className='flex items-center gap-5'>
-                <Link href='/Login'>login</Link>
+                <Link href='/login'>login</Link>
                 <CartIcon />
               </div>
             )}
